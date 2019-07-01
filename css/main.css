@@ -98,69 +98,59 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/*----------BASE STYLES----------*/
 
-.content-wrapper {
+/*--------------------BASE HEADER AND FOOTER STYLES--------------------*/
+
+header,
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-
-/*----------HEADER AND FOOTER BASE STYLES----------*/
-
-header, footer {
+header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-/*----------HEADER STYLES----------*/
-
-header {
-
-}
-
-nav ul {
+header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-flow: row nowrap;
-}
-
-nav ul li a {
-
-}
-
-.header-divider {
-
-}
-
-/*----------MAIN BASE STYLES----------*/
-
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
 }
 
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
 
-/*----------HOMEPAGE STYLES----------*/
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*---------------------MOBILE STYLES FOR HOMEPAGE---------------------*/
+
+/*Hero Area*/
 
 .hero-area {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-flow: row wrap;
 }
 
-.hero-area h1 {
-
-}
-
-/*----------NEWSLETTER STYLES----------*/
+/*Newsletter*/
 
 aside {
   display: flex;
@@ -169,26 +159,11 @@ aside {
   flex-flow: row wrap;
 }
 
-.form-description {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-/*----------FEATURES STYLES----------*/
+/*Features*/
 
 .features {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
 }
 
@@ -199,86 +174,23 @@ aside {
   flex-flow: row wrap;
 }
 
-article p {
-
-}
-
-/*----------REVIEWS STYLES----------*/
+/*Reviews*/
 
 .reviews {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
 }
 
-article {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-/*----------FOOTER STYLES----------*/
-
-.footer-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
-}
-
-address {
-
-}
-
-.contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
-}
-
-
-.social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column nowrap;
-}
-
-.copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-/*----------ABOUT PAGE STYLES----------*/
+/*===========================================================================
+     ABOUT PAGE
+  ==========================================================================*/
 
 .mission {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-}
-
-.mission-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.map {
-
 }
 
 .contact-section {
@@ -288,27 +200,23 @@ address {
   flex-flow: row wrap;
 }
 
-.about-contact {
+/*===========================================================================
+   FAQ PAGE
+  ===========================================================================*/
+
+.faq {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
   flex-flow: row wrap;
 }
 
-/*----------FAQ PAGE STYLES----------*/
-
-.faq {
+.faq .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
-
-
-
-
-
-
 
 
 /* ==========================================================================
