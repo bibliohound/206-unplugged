@@ -98,6 +98,13 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*------------------------------BASE STYLES----------------------------*/
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
 
 /*--------------------BASE HEADER AND FOOTER STYLES--------------------*/
 
@@ -114,6 +121,15 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
+}
+
+.header-divider {
+  width: 90%;
+}
+
+header {
+  padding: 15px 0;
 }
 
 header nav {
@@ -121,11 +137,19 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 100%;
+  padding: 0;
+}
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
 }
 
 footer .social-icons {
@@ -138,6 +162,10 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer p {
+  margin: 0;
 }
 
 /*---------------------MOBILE STYLES FOR HOMEPAGE---------------------*/
@@ -174,12 +202,21 @@ aside {
   flex-flow: row wrap;
 }
 
+.features article {
+  width: 55%;
+  margin: 30px 0;
+}
+
 /*Reviews*/
 
 .reviews {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.reviews h3 {
+  width: 50%;
 }
 
 /*===========================================================================
