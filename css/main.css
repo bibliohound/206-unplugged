@@ -345,16 +345,154 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /*Tablet Styles Here*/
+
+  header a {
+    width: 33%;
+  }
+
+  header nav {
+    width: 19%;
+  }
+
+  .hero-area h1 {
+    width: 70%;
+  }
+
+  aside .form-description {
+    width: 37%;
+  }
+
+  aside .form {
+    width: 43%;
+  }
+
+  .features article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    padding: 0 50px;
+    flex-basis: 30%;
+  }
+
+  .reviews article {
+    width: 46%;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .content-wrapper {
+    width: 90%;
+  }
+
+  .contact {
+    width: 22%;
+  }
+
+  .social {
+    width: 30%;
+  }
+
+  header {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 15px 50px;
+  }
+
+  header .content-wrapper {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .header-divider {
+    width: 0%;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  aside .content-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 50px;
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+
+
+/* ==========================================================================
+  About Page Tablet Styles
+   ========================================================================== */
+
+   .mission-content {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+ }
+
+ .mission-content p {
+   width: 45%;
+ }
+
+ .contact-section .content-wrapper h2 {
+   width: 75%;
+ }
+
+ .about-contact {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+ }
+
+ /* ==========================================================================
+    FAQ Page Tablet Styles
+    ========================================================================== */
+
+.faq .content-wrapper {
+  justify-content: space-between;
 }
+
+.faq-content {
+  flex-basis: 40%;
+}
+
+.faq h2 {
+  width: 100%;
+}
+
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+  /*Desktop Styles Here*/
+
+
+
+
+  /* ==========================================================================
+    About Page Desktop Styles
+     ========================================================================== */
+
+
+}
+
+
+
+
+
+
+
+
 
 /* ==========================================================================
    Print styles.
