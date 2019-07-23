@@ -152,6 +152,13 @@ footer .content-wrapper {
   margin: 50px 0;
 }
 
+footer .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
 footer .social-icons {
   display: flex;
   justify-content: space-around;
@@ -420,23 +427,21 @@ aside {
     justify-content: space-between;
   }
 
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 0 50px;
-}
-
-
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 50px;
+  }
 
 /* ==========================================================================
   About Page Tablet Styles
    ========================================================================== */
 
-   .mission-content {
-     display: flex;
-     justify-content: space-between;
-     align-items: flex-start;
+ .mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
  }
 
  .mission-content p {
@@ -469,20 +474,96 @@ aside {
   width: 100%;
 }
 
-
 }
 
+/* ==========================================================================
+   Desktop Styles
+   ========================================================================== */
 
 @media only screen and (min-width: 1200px) {
   /*Desktop Styles Here*/
 
+.content-wrapper {
+  width: 80%;
+}
 
+/*Header*/
 
+header .content-wrapper {
+  width: 90%;
+}
+
+header {
+  padding: 20px 60px;
+  justify-content: center;
+}
+
+header a {
+  width: 30%;
+}
+
+header nav {
+  width: 14%;
+}
+
+/*Hero*/
+
+.hero-area h1 {
+  width: 69%;
+}
+
+/*Aside*/
+
+aside .form-description,
+aside .form {
+  width: 33%;
+}
+
+/*Features*/
+
+.features article {
+  flex-basis: 20%;
+}
+
+/*Reviews*/
+
+.reviews article {
+  width: 43%;
+}
+
+footer .content-wrapper {
+  width: 90%;
+}
+
+/*Footer*/
+
+.footer-content {
+  padding: 0 120px;
+}
+
+.contact {
+  width: 19%;
+}
+
+.social {
+  width: 19%;
+}
 
   /* ==========================================================================
     About Page Desktop Styles
      ========================================================================== */
 
+.about-contact {
+  padding: 0 110px 0 0;
+}
+
+/* ==========================================================================
+  FAQ Page Desktop Styles
+   ========================================================================== */
+
+.faq-content {
+  flex-basis: 45%;
+}
 
 }
 
