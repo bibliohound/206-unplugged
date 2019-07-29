@@ -640,6 +640,10 @@ h2 {
    width: 45%;
  }
 
+ .map figure {
+   padding-bottom: 45%;
+ }
+
  .contact-section .content-wrapper h2 {
    width: 75%;
  }
@@ -775,6 +779,10 @@ footer .content-wrapper {
 .mission h2,
 .contact-section h2 {
   font-size: 3em;
+}
+
+.map figure {
+  padding-bottom: 38%;
 }
 
 /* ==========================================================================
