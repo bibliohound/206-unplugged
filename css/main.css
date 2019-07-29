@@ -159,7 +159,7 @@ figure {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 25px 0 0 0;
+  margin: 0;
 }
 
 footer h4,
@@ -197,6 +197,14 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  aligh-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -500,12 +508,15 @@ input[type=button] {
 @media only screen and (min-width: 768px) {
   /*Tablet Styles Here*/
 
+header figure {
+  width: 35%;
+}
+
 h2 {
   font-size: 2.25em;
 }
 
   header a {
-    width: 33%;
     font-size: 1em;
   }
 
@@ -649,6 +660,10 @@ h2 {
 @media only screen and (min-width: 1200px) {
   /*Desktop Styles Here*/
 
+header figure {
+  width: 30%;
+}
+
 h2 {
   font-size: 2.25em;
 }
@@ -678,7 +693,6 @@ header {
 }
 
 header a {
-  width: 30%;
   font-size: 1.125em;
 }
 
