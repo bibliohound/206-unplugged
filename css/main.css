@@ -107,11 +107,15 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  color: #e2e3ed;
+  text-align: left;
 }
 
 ul,
 ol {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -119,35 +123,24 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  color: #e2e3ed;
-  font-family: 'Poppins', sans-serif;
-}
-
 h2 {
-  color: #e2e3ed;
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   font-size: 1.875em;
+  margin: 0;
 }
 
 h3,
 h4 {
-  color: #e2e3ed;
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   font-size: 1.125em;
+  margin: 20px 0;
 }
 
 p {
   font-size: .875em;
-  line-height: 1.125em;
-}
-
-aside p {
-  color: #e2e3ed;
-}
-
-article p {
-  color: #e1e2ea;
+  line-height: 1.285;
 }
 
 img {
@@ -171,8 +164,6 @@ footer a {
 address {
   font-style: normal;
 }
-
-/*------------------------------BASE STYLES----------------------------*/
 
 .content-wrapper {
   width: 90%;
@@ -208,7 +199,10 @@ header figure {
 }
 
 .header-divider {
-  width: 90%;
+  background: #3a3a3a;
+  height: 1px;
+  width: 100%;
+  margin: 10px 0 20px 0;
 }
 
 header {
@@ -298,6 +292,12 @@ footer p {
   flex-flow: row wrap;
   background: url('../img/hero.jpg') center no-repeat #333;
   background-size: cover;
+  min-height: 500px;
+}
+
+.hero-area h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em;
 }
 
 /*Newsletter*/
@@ -314,6 +314,31 @@ aside .form-description {
   margin-top: 30px;
 }
 
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /*Features*/
 
 .features {
@@ -322,6 +347,10 @@ aside .form-description {
   flex-flow: row wrap;
   background: url('../img/background.jpg') center no-repeat #333;
   background-size: cover;
+}
+
+.features h2 {
+  margin-bottom: 60px;
 }
 
 .features-items {
@@ -333,7 +362,7 @@ aside .form-description {
 
 .features article {
   width: 55%;
-  margin: 15px 0;
+  margin: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -345,6 +374,11 @@ aside .form-description {
   margin-bottom: 40px;
 }
 
+.features p {
+  text-align: center;
+  margin: 0;
+}
+
 /*Reviews*/
 
 .reviews {
@@ -354,8 +388,14 @@ aside .form-description {
   background: #2a423a;
 }
 
+.reviews h2 {
+  margin-bottom: 40px;
+  line-height: 1;
+}
+
 .reviews h3 {
   width: 50%;
+  margin: 20px 0;
 }
 
 /*===========================================================================
@@ -378,12 +418,8 @@ aside .form-description {
   background: #527158;
 }
 
-.mission p {
-  color: #e2e3ed;
-}
-
 .contact-section p {
-  color: #e1e2ea;
+  margin: 0;
 }
 
 .map figure {
@@ -419,42 +455,22 @@ aside .form-description {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 50px 0 0 0;
 }
 
-.faq p {
-  color: #e2e3ed;
+.faq h2 {
+  margin-bottom: 40px;
+  line-height: 1;
+}
+
+.faq-content {
+  margin-bottom: 50px;
 }
 
 .faq h4 {
   line-height: 1.5em;
 }
 
-/*-----------------------------Newsletter Form Input-------------------------*/
-
-aside .form {
-  margin-top: 30px;
-}
-
-input[type=text] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #2a423a;
-  font-style: italic;
-}
-
-input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
-  background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-}
 
 /* ==========================================================================
    Helper classes
@@ -548,12 +564,26 @@ input[type=button] {
 @media only screen and (min-width: 768px) {
   /*Tablet Styles Here*/
 
-header figure {
-  width: 35%;
-}
+/* General Styles */
 
 h2 {
   font-size: 2.25em;
+  line-height: 1.333;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.333;
+}
+
+/* Header Tablet Styles */
+
+header {
+  justify-content: space-around;
+}
+
+header figure {
+  width: 35%;
 }
 
   header a {
@@ -561,21 +591,49 @@ h2 {
   }
 
   header nav {
-    width: 19%;
+    width: 20%;
   }
 
-  .hero-area h1 {
-    width: 70%;
-    font-size: 3em;
+  header .content-wrapper {
+    flex-flow: row nowrap;
+    justify-content: space-between;
   }
+
+  .header-divider {
+    display: none;
+  }
+
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  /* Hero Area Tablet Styles */
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+  }
+
+/* Newsletter Tablet Styles */
 
   aside .form-description {
     width: 37%;
+    margin-top: 0;
   }
 
   aside .form {
     width: 43%;
+    margin-top: 0;
   }
+
+  aside .content-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+/* Features Tablet Styles */
 
   .features article {
     display: flex;
@@ -589,6 +647,8 @@ h2 {
   .features i {
     font-size: 4.5em;
   }
+
+/* Reviews Tablet Styles */
 
   .reviews .content-wrapper {
     display: flex;
@@ -610,8 +670,10 @@ h2 {
     padding: 0 20px 0 0;
   }
 
+  /* Footer Tablet Styles */
+
   footer .content-wrapper {
-    width: 90%;
+    width: 65%;
   }
 
   .contact {
@@ -622,36 +684,10 @@ h2 {
     width: 30%;
   }
 
-  header {
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    padding: 15px 50px;
-  }
-
-  header .content-wrapper {
-    flex-flow: row nowrap;
-    justify-content: space-between;
-  }
-
-  .header-divider {
-    width: 0%;
-  }
-
-  header nav ul {
-    justify-content: space-between;
-  }
-
-  aside .content-wrapper {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-  }
-
   .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0 50px;
   }
 
 /* ==========================================================================
@@ -682,6 +718,10 @@ h2 {
    align-items: flex-start;
  }
 
+ .about-contact h4 {
+   font-size: 1.5em;
+ }
+
  /* ==========================================================================
     FAQ Page Tablet Styles
     ========================================================================== */
@@ -708,8 +748,10 @@ h2 {
 @media only screen and (min-width: 1200px) {
   /*Desktop Styles Here*/
 
-header figure {
-  width: 30%;
+/* General Styles */
+
+.content-wrapper {
+  width: 80%;
 }
 
 h2 {
@@ -723,10 +765,6 @@ h4 {
 
 p {
   font-size: 1.125em;
-}
-
-.content-wrapper {
-  width: 80%;
 }
 
 /*Header*/
@@ -748,6 +786,10 @@ header nav {
   width: 14%;
 }
 
+header figure {
+  width: 30%;
+}
+
 /*Hero*/
 
 .hero-area h1 {
@@ -764,6 +806,10 @@ aside .form {
 
 /*Features*/
 
+.features h2 {
+  width: 70%;
+}
+
 .features article {
   flex-basis: 20%;
 }
@@ -779,14 +825,6 @@ aside .form {
 }
 
 /*Footer*/
-
-footer .content-wrapper {
-  width: 90%;
-}
-
-.footer-content {
-  padding: 0 120px;
-}
 
 .contact {
   width: 19%;
@@ -806,11 +844,16 @@ footer .content-wrapper {
 
 .mission h2,
 .contact-section h2 {
+  width: 100%;
   font-size: 3em;
 }
 
 .map figure {
   padding-bottom: 38%;
+}
+
+.about-contact h4 {
+  font-size: 1.875em;
 }
 
 /* ==========================================================================
@@ -822,7 +865,14 @@ footer .content-wrapper {
 }
 
 .faq h2 {
+  width: 100%;
   font-size: 3em;
+}
+
+.faq h4,
+.faq p {
+  font-size: 1.125em;
+  line-height: 1;
 }
 
 }
